@@ -10,14 +10,11 @@ const path = require("path");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 // Setting up API Routes
-const api_ = require(path.join(__dirname, "/API"));  // imports the module from API directory
-app.use("/api", api_);  // sets up middleware to handle requests to the '/api' endpoint using the imported module
+const apiRoutes = require(path.join(__dirname, "/api/routes"));  // imports the module from API directory
+app.use("/", apiRoutes);  // sets up middleware to handle requests to the '/api' endpoint using the imported module
 // Use express.static middleware to serve static files
-app.use("/", express.static(path.join(__dirname, "/Client")));
-app.use("/home", express.static(path.join(__dirname, "/Client")));
-app.use("/customerData", express.static(path.join(__dirname, "/Client/customerData.html")));
-app.use("/inputNew", express.static(path.join(__dirname, "/Client/inputNew.html")));
-app.use("*", express.static(path.join(__dirname, "/Client/404.html")));
+app.use(express.static(path.join(__dirname, 'client')));
+
 // Starting the Server
 app.listen(PORT, (error) => {
     if (error) {

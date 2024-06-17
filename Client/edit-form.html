@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Input New Data</title>
+    <title>EDIT CUSTOMER DATA</title>
 </head>
 <body>
     <header>
-        <h1>INPUT FORM</h1>
+        <h1>EDIT CUSTOMER DATA</h1>
     </header>
 
     <section class="index">
@@ -22,10 +22,10 @@
 
     <section class="inputForm-wrapper">
         <!--POST request to /inputNew when submitted-->
-        <form class="inputForm" action="/inputNew" method="post">
+        <form class="inputForm" action="/editData" method="post">
             <label>registration</label> <br>
             <label for="name">Name: </label><br>
-            <input type="text" id="name" name="name" placeholder="ex: oldJeans" required/><br><br>
+            <input type="text" id="name" name="name" readonly required/><br><br>
 
             <label for="loanLimit">Loan Limit:</label><br>
             <input type="text" id="loanLimit" name="loanLimit" placeholder="ex: 5000000" required /><br><br>
@@ -39,6 +39,8 @@
             <button type="submit" id="post_" value="add Data">submit</button>
         </form>
     </section>
+
+    <script src="js/edit-form.js"></script>
 
 
 </body>
