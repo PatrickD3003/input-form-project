@@ -49,7 +49,7 @@ const handleContactForm = {
             });
         });
     },
-    
+
     getAllMessages: async (req, res) => {
         console.log("Fetching all messages...");
         const db = new sqlite3.Database(DbPath, sqlite3.OPEN_READWRITE, (err) => {
