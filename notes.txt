@@ -1,0 +1,3 @@
+install sqlite3 trybar:
+npm i sqlite3
+

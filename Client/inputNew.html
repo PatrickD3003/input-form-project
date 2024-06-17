@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Input New Data</title>
+</head>
+<body>
+    <header>
+        <h1>Input New Customer Data</h1>
+    </header>
+
+    <p id="feedback-msg"></p>
+
+    <section class="inputForm-wrapper">
+        <form>
+            <label>registration</label> <br>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="ex: oldJeans" required/><br><br>
+
+            <label for="loanLimit">Loan Limit:</label>
+            <input type="text" id="loanLimit" name="loanLimit" placeholder="ex: 5000000" required /><br><br>
+
+            <label for="ongoingLoan">Ongoing Loan:</label>
+            <input type="text" id="ongoingLoan" name="ongoingLoan" placeholder="ex: 1000000"/><br><br>
+
+            <label for="paymentFrequency">payment frequency(month):</label>
+            <input type="text" id="paymentFrequency" name="paymentFrequency" placeholder="ex: 3" /><br><br>
+
+            <button type="button" id="post_" value="add Data">submit</button>
+        </form>
+    </section>
+
+    <section>
+        <a href="/">return home</a>
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
