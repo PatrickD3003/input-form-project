@@ -20,7 +20,7 @@ header {
     padding: 10px;
     border: 2px solid #000; /* Add border to the form container */
     border-radius: 10px; /* Optional: rounded corners */
-    background-color: #f9f9f9; /* Optional: background color */
+    background-color: lightgrey; /* Optional: background color */
 }
 
 .inputForm {
@@ -83,6 +83,16 @@ button:hover {
 
 .dataTable tr:hover {
     background-color: #ddd;
+}
+
+table .edit {
+    background-color: blue;
+    color: white;
+}
+
+table .delete {
+    background-color: rgb(216, 25, 60);
+    color: white;
 }
 
 .searchBar {

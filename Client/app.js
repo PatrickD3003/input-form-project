@@ -66,6 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <td>${customer.Loan_Limit}</td>
                     <td>${customer.Ongoing_Loan}</td>
                     <td>${customer.Payment_Frequency}</td>
+                    <td>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
                 `;
                 tableElement.appendChild(row);
             });

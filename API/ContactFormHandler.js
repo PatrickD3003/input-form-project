@@ -6,7 +6,8 @@ const DbPath = path.join(__dirname, "../Data/db.sqlite");
 const handleContactForm = {
     postMessage: async (req, res) => {
         const body_ = await req.body;
-
+        // TODO: biar databasenya gak dipanggil everytime, find a way biar gak dipanggil terus"
+        // keyword : session storage
         const db = new sqlite3.Database(DbPath, sqlite3.OPEN_READWRITE, (err) => {
             if (err) {
                 console.log("Error happened at opening the DB connection: ", err);
